@@ -1,0 +1,29 @@
+.landing {
+    background-image: url("https://picsum.photos/1900/1267/?random");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    padding-top: 5em;
+}
+
+img {
+    max-width: 150px;
+}
+
+.title {
+    margin-top: 25%;
+}
+@media screen and (min-width: 576px) {
+    .title {
+        margin-top: 15%;
+    }
+    img {
+        margin-top: 25%;
+    }
+}
