@@ -6,6 +6,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { MapComponent } from './map/map.component';
 import { ExhibitComponent } from './exhibit/exhibit.component';
 import { FaqComponent } from './faq/faq.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'schedules', component: ScheduleComponent},
   {path: 'maps', component: MapComponent},
   {path: 'exhibits', component: ExhibitComponent},
-  {path: 'faqs', component: FaqComponent}
+  {path: 'faqs', component: FaqComponent},
+  {path: 'sponsors', component: SponsorComponent}
 ];
 
 @NgModule({

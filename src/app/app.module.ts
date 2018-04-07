@@ -11,6 +11,12 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { MapComponent } from './map/map.component';
 import { ExhibitComponent } from './exhibit/exhibit.component';
 import { FaqComponent } from './faq/faq.component';
+import { FooterComponent } from './footer/footer.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { LandingComponent } from './landing/landing.component';
+import { GuestinfoComponent } from './guestinfo/guestinfo.component';
+import { SponsordisplayComponent } from './sponsordisplay/sponsordisplay.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
 
 
 @NgModule({
@@ -22,7 +28,13 @@ import { FaqComponent } from './faq/faq.component';
     ScheduleComponent,
     MapComponent,
     ExhibitComponent,
-    FaqComponent
+    FaqComponent,
+    FooterComponent,
+    TimelineComponent,
+    LandingComponent,
+    GuestinfoComponent,
+    SponsordisplayComponent,
+    SponsorComponent
   ],
   imports: [
     BrowserModule,
