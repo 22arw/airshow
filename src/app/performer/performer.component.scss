@@ -1,0 +1,29 @@
+.performers {
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.card {
+    min-width: 18rem;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        filter: drop-shadow(1px 1px 2px blue);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 18rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    padding: 2em;
+}
