@@ -22,3 +22,14 @@ footer {
     padding: 1em;
     border-radius: 5px;
 }
+
+.links {
+    ul {
+        list-style-type: none;
+        li {
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
