@@ -28,3 +28,13 @@ img {
         margin-top: 60%;
     }
 }
+
+.email {
+    border: hidden;
+    border-bottom-style: solid;
+    background-color: transparent;
+
+    &:focus {
+        background-color: white;
+    }
+}
