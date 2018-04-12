@@ -1,7 +1,8 @@
-.landing {
+.landing-page {
     background-image: url(../../assets/fifheritage.png);
 
-    height: 100%;
+    height: 100vh;
+    min-height: 640px;
 
     background-position: center;
     background-repeat: no-repeat;
