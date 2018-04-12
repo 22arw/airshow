@@ -30,7 +30,12 @@ img {
     }
 }
 
-#mc_embed_signup {
-    display: block;
-    position: relative;
+.email {
+    border: hidden;
+    border-bottom-style: solid;
+    background-color: transparent;
+
+    &:focus {
+        background-color: white;
+    }
 }
