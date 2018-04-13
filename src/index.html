@@ -22,4 +22,10 @@
   $('.nav-link').on('click', function(){
     $('.navbar-collapse').collapse('hide');
   });
+  
+  //  Scrolls the page to the top
+  $('.goToTop').click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
 </script>
