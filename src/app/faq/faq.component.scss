@@ -19,9 +19,21 @@
         transform: translate(-50%, -50%);
         font-size: 3rem;
         color: white;
+        border: 5px solid white;
+        border-radius: 5px;
+        padding: 10px;
+
+        @media screen and (max-width: 904px) {
+            font-size: 2em;
+        }
+
+        @media screen and (max-width: 614px) {
+            font-size: 1em;
+        }
     }
 }
 
 .btn {
     white-space: normal;
+    text-align: left;
 }
