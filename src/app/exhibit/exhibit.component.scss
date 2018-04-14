@@ -1,3 +1,8 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+$light-brown: #edba5e;
+$crimson: #e9232d;
+
 .exhibit {
     padding-top: 5em;
     padding-bottom: 2em;
@@ -30,4 +35,24 @@
             font-size: 1em;
         }
     }
+}
+
+.carousel-item {
+    img {
+        filter: brightness(0.6);
+        max-height: 100vh;
+    }
+}
+
+.carousel-caption {
+    @media screen and (max-width: 768px) {
+        font-size: .75em;
+    }
+}
+
+h3 {
+    padding: 1em;
+    background-color: $light-blue;
+    color: white;
+    margin: 0;
 }
