@@ -1,3 +1,6 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+
 .faq {
     padding-top: 5em;
     padding-bottom: 2em;
@@ -35,4 +38,9 @@
 .btn {
     white-space: normal;
     text-align: left;
+    color: $dark-blue;
+}
+
+a {
+    color: $light-blue;
 }
