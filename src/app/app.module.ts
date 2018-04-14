@@ -17,6 +17,7 @@ import { LandingComponent } from './landing/landing.component';
 import { GuestinfoComponent } from './guestinfo/guestinfo.component';
 import { SponsordisplayComponent } from './sponsordisplay/sponsordisplay.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
+import { PremiumseatingComponent } from './premiumseating/premiumseating.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SponsorComponent } from './sponsor/sponsor.component';
     LandingComponent,
     GuestinfoComponent,
     SponsordisplayComponent,
-    SponsorComponent
+    SponsorComponent,
+    PremiumseatingComponent
   ],
   imports: [
     BrowserModule,
