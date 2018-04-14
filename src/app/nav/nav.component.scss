@@ -8,5 +8,8 @@ $dark-blue: #117cad;
 }
 
 .navbar {
-    background-color: $dark-blue !important;
+    // background-color: $dark-blue !important;
+    background-color: transparent !important;
+    z-index: 5;
+
 }
