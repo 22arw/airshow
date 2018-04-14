@@ -1,3 +1,8 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+$light-brown: #edba5e;
+$crimson: #e9232d;
+
 .img {
     padding-bottom: 1em;
     margin-top: -1em;
@@ -33,7 +38,7 @@ h3 {
     height: 10px;
     border-radius: 50%;
     border: 3px solid #fff;
-    background: #f4a24c;
+    background: $light-blue;
     box-sizing: content-box;
     margin: auto;
     position: absolute;
@@ -47,7 +52,7 @@ h3 {
     width: 24px;
     height: 100%;
     border-radius: 0 12px 12px 0;
-    background: #f4a24c;
+    background: $light-blue;
     position: absolute;
     top: 0;
     left: 51%;
@@ -58,7 +63,7 @@ h3 {
     content: "";
     width: 47px;
     height: 4px;
-    background: #f4a24c;
+    background: $light-blue;
     margin: auto 0;
     position: absolute;
     top: 0;
@@ -70,7 +75,7 @@ h3 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #f4a24c;
+    background: $light-blue;
     margin: auto 0;
     position: absolute;
     top: 0;
@@ -84,7 +89,7 @@ h3 {
 .main-timeline .title{
     font-size: 24px;
     font-weight: bold;
-    color: #f4a24c;
+    color: $light-blue;
     text-align: center;
     margin: 0 0 7px 0;
 }
@@ -109,7 +114,7 @@ h3 {
     height: 85px;
     line-height: 87px;
     border-radius: 50%;
-    background: #f4a24c;
+    background: $light-blue;
     font-size: 54px;
     color: #fff;
     text-align: center;
@@ -150,20 +155,20 @@ h3 {
 .main-timeline .timeline:nth-child(2n) .timeline-icon,
 .main-timeline .timeline:nth-child(2n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(2n) .timeline-icon:after,
-.main-timeline .timeline:nth-child(2n) .icon i{ background: #f26f77; }
-.main-timeline .timeline:nth-child(2n) .title{ color: #f26f77; }
+.main-timeline .timeline:nth-child(2n) .icon i{ background: $light-brown; }
+.main-timeline .timeline:nth-child(2n) .title{ color: $light-brown; }
 .main-timeline .timeline:nth-child(3n):before,
 .main-timeline .timeline:nth-child(3n) .timeline-icon,
 .main-timeline .timeline:nth-child(3n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(3n) .timeline-icon:after,
-.main-timeline .timeline:nth-child(3n) .icon i{ background: #48aeba; }
-.main-timeline .timeline:nth-child(3n) .title{ color: #48aeba; }
+.main-timeline .timeline:nth-child(3n) .icon i{ background: $dark-blue; }
+.main-timeline .timeline:nth-child(3n) .title{ color: $dark-blue; }
 .main-timeline .timeline:nth-child(4n):before,
 .main-timeline .timeline:nth-child(4n) .timeline-icon,
 .main-timeline .timeline:nth-child(4n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(4n) .timeline-icon:after,
-.main-timeline .timeline:nth-child(4n) .icon i{ background: #a3ba74; }
-.main-timeline .timeline:nth-child(4n) .title{ color: #a3ba74; }
+.main-timeline .timeline:nth-child(4n) .icon i{ background: $crimson; }
+.main-timeline .timeline:nth-child(4n) .title{ color: $crimson; }
 @media only screen and (max-width: 767px){
     .main-timeline .timeline:before,
     .main-timeline .timeline:nth-child(2n):before{
