@@ -1,5 +1,12 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+
 .navbar-text {
     a:hover {
         text-decoration: none;
     }
+}
+
+.navbar {
+    background-color: $dark-blue !important;
 }
