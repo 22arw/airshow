@@ -1,3 +1,6 @@
+$primary-color: #23a5cb;
+
+
 .landing-page {
 
     height: 100vh;
@@ -44,9 +47,34 @@ img {
 .email {
     border: hidden;
     border-bottom-style: solid;
+    border-bottom-color: $primary-color;
+    border-bottom-width: 1px;
     background-color: transparent;
+    display: inline-block;
+    color: white;
 
     &:focus {
-        background-color: white;
+        background-color: $primary-color;
     }
+}
+
+.btn {
+    background-color: $primary-color;
+    border: ($primary-color - 25) 1px solid;
+    &:hover {
+        background-color: $primary-color - 25;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
 }
