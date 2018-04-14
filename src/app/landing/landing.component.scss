@@ -1,4 +1,5 @@
-$primary-color: #23a5cb;
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
 
 
 .landing-page {
@@ -54,22 +55,22 @@ img {
 .email {
     border: hidden;
     border-bottom-style: solid;
-    border-bottom-color: $primary-color;
+    border-bottom-color: $light-blue;
     border-bottom-width: 1px;
     background-color: transparent;
     display: inline-block;
     color: white;
 
     &:focus {
-        background-color: $primary-color;
+        background-color: $light-blue;
     }
 }
 
 .btn {
-    background-color: $primary-color;
-    border: ($primary-color - 25) 1px solid;
+    background-color: $light-blue;
+    border: $dark-blue 1px solid;
     &:hover {
-        background-color: $primary-color - 25;
+        background-color: $dark-blue;
     }
 }
 
