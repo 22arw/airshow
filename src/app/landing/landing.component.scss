@@ -28,12 +28,19 @@ $primary-color: #23a5cb;
 }
 
 img {
-    max-width: 150px;
+    max-width: 175px;
 }
 
 .title {
-    margin-top: 25%;
+    margin-top: 5%;
+    margin-left: 10px;
     color: white;
+    .title-info {
+        border: white 5px solid;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (min-width: 576px) {
     .title {
