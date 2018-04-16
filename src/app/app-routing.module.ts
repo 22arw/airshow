@@ -9,13 +9,14 @@ import { FaqComponent } from './faq/faq.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
   {path: 'performers', component: PerformerComponent},
   {path: 'schedules', component: ScheduleComponent},
   {path: 'maps', component: MapComponent},
   {path: 'exhibits', component: ExhibitComponent},
   {path: 'faqs', component: FaqComponent},
-  {path: 'sponsors', component: SponsorComponent}
+  {path: 'sponsors', component: SponsorComponent},
+  {path: '', component: HomeComponent, pathMatch: 'full'},
+  {path: '**', component: HomeComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

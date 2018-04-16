@@ -9,12 +9,35 @@ h3 {
 }
 
 .sponsor-lg {
+    div {
+        margin: auto;
+    }
 }
 
 .sponsor-md {
     padding: 1em 0;
+    div {
+        margin: auto;
+    }
 }
 
 .sponsor-sm {
+    div {
+        margin: auto;
+    }
 
+}
+
+a {
+    @media screen and (min-width: 992px) {
+        img {
+            filter: grayscale(100%);
+        }   
+    }
+
+    &:hover {
+        img {
+            filter: grayscale(0);
+        }
+    }
 }

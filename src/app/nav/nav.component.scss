@@ -1,5 +1,17 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+
 .navbar-text {
     a:hover {
         text-decoration: none;
+    }
+}
+
+.navbar {
+    background-color: transparent !important;
+    z-index: 5;
+
+    @media screen and (max-width: 991px) {
+        background-color: $light-blue !important;
     }
 }

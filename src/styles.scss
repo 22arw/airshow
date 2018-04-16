@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
 body, html {
     height: 100%;
-
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }

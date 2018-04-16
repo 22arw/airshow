@@ -1,12 +1,27 @@
+$light-blue: #23a5cb;
+$dark-blue: #117cad;
+
+
 .landing-page {
-    background-image: url(../../assets/fifheritage.png);
 
     height: 100vh;
-    min-height: 640px;
+    min-height: 600px;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    &:before {
+        content: "";
+        background: url(../../assets/fifheritage.png);
+        filter: brightness(0.4);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        min-height: 640px;
+      }
 }
 
 .main {
@@ -14,16 +29,24 @@
 }
 
 img {
-    max-width: 150px;
+    max-width: 175px;
+    margin-top: -4em;
 }
 
 .title {
-    margin-top: 25%;
+    margin-top: 5%;
     color: white;
+    .title-info {
+        border: white 5px solid;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (min-width: 576px) {
     .title {
         margin-top: 15%;
+        margin-left: 30px;
     }
     img {
         margin-top: 60%;
@@ -33,9 +56,46 @@ img {
 .email {
     border: hidden;
     border-bottom-style: solid;
+    border-bottom-color: $light-blue;
+    border-bottom-width: 1px;
     background-color: transparent;
+    display: inline-block;
+    color: white;
 
     &:focus {
-        background-color: white;
+        background-color: $light-blue;
+    }
+}
+
+.btn {
+    background-color: $light-blue;
+    border: $dark-blue 1px solid;
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    h1, h4 {
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.75em;
+    }
+    h4 {
+        font-size: 1.25em;
     }
 }
