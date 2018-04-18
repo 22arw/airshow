@@ -33,22 +33,12 @@ $crimson: #e9232d;
     }
 }
 
-.carousel-item {
-    img {
-        filter: brightness(0.6);
-        max-height: 100vh;
-    }
-}
-
-.carousel-caption {
-    @media screen and (max-width: 768px) {
-        font-size: .75em;
-    }
-}
-
-h3 {
-    padding: 1em;
+.exhibits {
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color: $light-blue;
-    color: white;
-    margin: 0;
+
+    .btn-link {
+        color: $dark-blue;
+    }
 }
