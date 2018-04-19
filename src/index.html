@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
+     <!-- IE required polyfills, in this exact order -->
+     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+     <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
   <title>Frontiers In Flight | McConnell AFB</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/x-icon" href="assets/airshow_logo.png">
 
@@ -13,10 +17,10 @@
   
 </head>
 <body>
-  <app-root></app-root>
-</body>
-</html>
 
+    <app-root></app-root>
+  </body>
+  </html>
 <script>
   // Closes nav bar on mobile when link is clicked.
   $('.nav-link').on('click', function(){
