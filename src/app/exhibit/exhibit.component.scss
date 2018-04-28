@@ -38,6 +38,11 @@ $crimson: #e9232d;
     padding-bottom: 2em;
     // background-color: $light-blue;
 
+    .btn {
+        white-space: normal;
+        text-align: left;
+    }
+
     .btn-link {
         color: $dark-blue;
     }
