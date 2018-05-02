@@ -16,6 +16,10 @@ $dark-blue: #117cad;
     &:hover {
         filter: drop-shadow(1px 1px 2px black);
     }
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+        /* IE10+ specific styles go here */  
+        
+     }
 }
 
 @media screen and (min-width: 768px) {
@@ -35,6 +39,7 @@ a {
         width: 100%;
         min-height: 200px;
         filter: brightness(0.4);
+        
     }
     .center {
         text-align: center;
@@ -55,5 +60,25 @@ a {
         @media screen and (max-width: 614px) {
             font-size: 1em;
         }
+    }
+}
+.header::before {
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+        position: absolute;
+        display: block;
+        height:100%;
+        width:100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        content:"";                 /*adjust brightness here */
+        background: hsla(0, 0%, 0%, .4);  
+    }      
+}
+.center{
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)  {
+     z-index: 3;   
     }
 }
