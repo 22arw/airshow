@@ -39,6 +39,7 @@ a {
         width: 100%;
         min-height: 200px;
         filter: brightness(0.4);
+        -webkit-filter: brightness(0.4);
         
     }
     .center {
@@ -62,23 +63,23 @@ a {
         }
     }
 }
-.header::before {
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
-        position: absolute;
-        display: block;
-        height:100%;
-        width:100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        content:"";                 /*adjust brightness here */
-        background: hsla(0, 0%, 0%, .4);  
-    }      
-}
-.center{
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)  {
-     z-index: 3;   
-    }
-}
+// .header::before {
+//     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+//         position: absolute;
+//         display: block;
+//         height:100%;
+//         width:100%;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         z-index: 2;
+//         content:"";                 /*adjust brightness here */
+//         background: hsla(0, 0%, 0%, .4);  
+//     }      
+// }
+// .center{
+//     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)  {
+//      z-index: 3;   
+//     }
+// }
