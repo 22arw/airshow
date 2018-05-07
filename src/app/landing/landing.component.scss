@@ -110,3 +110,25 @@ img {
         font-size: 1.25em;
     }
 }
+//IE11 Mute-The-Background stuff
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    //     /* IE10+ specific styles go here */      
+        .main:before {
+            position: absolute;
+            display: block;
+            height:inherit;
+            width:100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            content:"";
+            /*adjust brightness here */
+            background: hsla(0, 0%, 0%, .4); 
+        }
+        .row{
+            z-index: 1;
+        }
+     }
+    
