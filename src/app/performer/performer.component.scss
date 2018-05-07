@@ -10,16 +10,10 @@ $dark-blue: #117cad;
 .card {
     min-width: 18rem;
     margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
     color: black;
     &:hover {
         filter: drop-shadow(1px 1px 2px black);
     }
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
-        /* IE10+ specific styles go here */  
-        
-     }
 }
 
 @media screen and (min-width: 768px) {
@@ -39,6 +33,7 @@ a {
     img {
         width: 100%;
         min-height: 200px;
+        -webkit-filter: brightness(0.4);
         filter: brightness(0.4);
     }
 
@@ -63,8 +58,23 @@ a {
         }
     }
 }
-.header::before {
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+
+//IE 11, why you make me do this?
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+//     /* IE10+ specific styles go here */ 
+
+    .card {
+        .card-img-top {
+            height: 20rem;
+        }
+
+        &:hover{
+            -webkit-box-shadow:1px 1px 19px 2px rgba(0,0,0,0.75);
+            box-shadow:1px 1px 19px 2px rgba(0,0,0,0.75);
+        }
+    }
+   
+    .header::before {
         position: absolute;
         display: block;
         height:100%;
@@ -75,13 +85,10 @@ a {
         left: 0;
         z-index: 2;
         content:"";
-        
         /*adjust brightness here */
-        background: hsla(0, 0%, 0%, .4);  
-    }      
-}
-.center{
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)  {
-     z-index: 3;   
+        background: hsla(0, 0%, 0%, .6); 
     }
-}
+    .center{
+        z-index: 3;
+    }
+ }
