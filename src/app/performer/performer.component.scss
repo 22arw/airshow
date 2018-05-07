@@ -16,10 +16,6 @@ $dark-blue: #117cad;
     &:hover {
         filter: drop-shadow(1px 1px 2px black);
     }
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
-        /* IE10+ specific styles go here */  
-        
-     }
 }
 
 @media screen and (min-width: 768px) {
@@ -38,6 +34,7 @@ a {
     img {
         width: 100%;
         min-height: 200px;
+        -webkit-filter: brightness(0.4);
         filter: brightness(0.4);
         
     }
@@ -62,8 +59,78 @@ a {
         }
     }
 }
-.header::before {
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+
+//IE 11, why you make me do this?
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    /* IE10+ specific styles go here */ 
+    .card{
+        width: 20rem;
+        margin-bottom: 2em;
+    }
+    .a{
+        grid-area: card_a;
+    }
+    .b{
+        grid-area: card_b;
+    }  
+    .c{
+        grid-area: card_c;
+    }
+    .d{
+        grid-area: card_d;
+    }
+    .e{
+        grid-area: card_e;
+    }
+    .f{
+        grid-area: card_f;
+    }
+    .g{
+        grid-area: card_g;
+    }
+    .h{
+        grid-area: card_h;
+    }
+    .i{
+        grid-area: card_i;
+    }
+    .j{
+        grid-area: card_j;
+    }
+    .k{
+        grid-area: card_k;
+    }
+    .l{
+        grid-area: card_l;
+    }
+    .m{
+        grid-area: card_m;
+    }      
+    .container_performers{
+        padding-left: 9rem;
+        text-align: center;
+    }
+    .row{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem; //defines the width of each box, 
+        grid-template-rows: auto;                 //defines the height of each box, If you change this value, you will have to 
+        grid-gap: 5rem 5rem; //<Row Gap Column gap>
+        justify-items: center;
+        grid-template-areas:
+            "card_a card_b card_c"
+            "card_d card_e card_f"
+            "card_g card_h card_i"
+            "card_j card_k card_l"
+            ". card_m .";
+        
+    }
+    .card:hover{
+        -webkit-box-shadow:1px 1px 19px 2px rgba(0,0,0,0.75);
+        box-shadow:1px 1px 19px 2px rgba(0,0,0,0.75);
+    }
+   
+    .header::before {
         position: absolute;
         display: block;
         height:100%;
@@ -74,11 +141,9 @@ a {
         left: 0;
         z-index: 2;
         content:"";                 /*adjust brightness here */
-        background: hsla(0, 0%, 0%, .4);  
-    }      
-}
-.center{
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)  {
-     z-index: 3;   
+        background: hsla(0, 0%, 0%, .4); 
     }
-}
+    .center{
+        z-index: 3;
+    }
+ }
