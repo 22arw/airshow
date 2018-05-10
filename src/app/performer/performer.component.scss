@@ -7,6 +7,14 @@ $crimson: #e01021;
     padding-top: 5em;
     padding-bottom: 2em;
 
+
+    // if the background image is too much, remove these background image properties.
+    background-image: url(../../assets/runway.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .card {
