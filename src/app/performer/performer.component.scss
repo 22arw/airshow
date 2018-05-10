@@ -6,14 +6,17 @@ $crimson: #e01021;
 .performers {
     padding-top: 5em;
     padding-bottom: 2em;
+    background-color: $dark-blue;
 
 
     // if the background image is too much, remove these background image properties.
-    background-image: url(../../assets/runway.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @media screen and (min-width: 768px) {
+        background-image: url(../../assets/runway.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
 }
 
