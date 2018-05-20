@@ -1,27 +1,27 @@
-# Airshow
+# McConnell AFB Frontiers In Flight Airshow
+## Sept 8-9, 2018
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+[Production Site](https://frontiersinflight.com/)
+[Development/Testing Site](https://quizzical-saha-5cb856.netlify.com/)
 
-## Development server
+### How to contribute
+1. Create a Github account.
+2. Fork this repository into your own account.
+3. Clone your repo to your computer.
+4. Find an issue you want to tackle. [https://github.com/22arw/airshow/issues](https://github.com/22arw/airshow/issues)
+5. Make changes and commit them.
+6. Push your changes to your github repo.
+7. Open a pull request and we'll review your code before it gets accepted.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Getting up and running
+After you've pulled down a local copy of the repository, do the following:
+1. Install [Node.js](https://nodejs.org/en/download/)
+2. Install Angular CLI `npm i -g @angular/cli`
+3. Make sure you are in the airshow folder and run `npm install`
+4. Start the server and view the project `ng s -o`
 
-## Code scaffolding
+### What? I have no idea what to do.
+Reach out to `kevin.falting@us.af.mil` for questions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Styles
+We're using [bootstrap](https://getbootstrap.com/) to style the site. Plain and simple.
