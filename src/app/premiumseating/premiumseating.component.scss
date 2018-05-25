@@ -3,6 +3,23 @@ $dark-blue: #0e68a3;
 $light-brown: #e6af3d;
 $crimson: #e01021;
 
-.premiumseating{
-    background-image: url();
+#premium-seating{
+    background-image: url("../../assets/card3_image_duoTone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding-top: 10%;
+    padding-bottom: 3em;
+    min-height: 100vh;
+
+    color: white;
+
+    .btn {
+        margin: 2em;
+    }
+
+    .disclaimer {
+        font-size: .75em;
+        color: gray;
+    }
 }
