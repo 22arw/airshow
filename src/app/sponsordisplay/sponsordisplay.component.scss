@@ -33,16 +33,16 @@ h3 {
 
 }
 
-a {
-    @media screen and (min-width: 992px) {
-        img {
-            filter: grayscale(100%);
-        }   
-    }
+// a {
+//     @media screen and (min-width: 992px) {
+//         img {
+//             filter: grayscale(100%);
+//         }   
+//     }
 
-    &:hover {
-        img {
-            filter: grayscale(0);
-        }
-    }
-}
+//     &:hover {
+//         img {
+//             filter: grayscale(0);
+//         }
+//     }
+// }
