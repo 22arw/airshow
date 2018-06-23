@@ -18,6 +18,7 @@ import { GuestinfoComponent } from './guestinfo/guestinfo.component';
 import { SponsordisplayComponent } from './sponsordisplay/sponsordisplay.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { PremiumseatingComponent } from './premiumseating/premiumseating.component';
+import { ParkingComponent } from './parking/parking.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PremiumseatingComponent } from './premiumseating/premiumseating.compone
     GuestinfoComponent,
     SponsordisplayComponent,
     SponsorComponent,
-    PremiumseatingComponent
+    PremiumseatingComponent,
+    ParkingComponent
   ],
   imports: [
     BrowserModule,
