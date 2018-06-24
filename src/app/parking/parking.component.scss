@@ -9,9 +9,11 @@ $crimson: #e01021;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
 
-  // background-color: $light-blue;
+  @media screen and (max-width: 992px) {
+    background-attachment: scroll;
+  }
 
   min-height: 70vh;
 
