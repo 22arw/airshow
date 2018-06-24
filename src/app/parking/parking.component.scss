@@ -4,14 +4,15 @@ $light-brown: #e6af3d;
 $crimson: #e01021;
 
 #parking {
-  // background-image: url(../../assets/parking.jpg);
-  min-height: 50vh;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-attachment: fixed;
+  background-image: url(../../assets/parking.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-  background-color: $light-blue;
+  // background-color: $light-blue;
+
+  min-height: 50vh;
 
   color: whitesmoke;
 
