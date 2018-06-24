@@ -1,12 +1,19 @@
-#parking {
-  background-image: url(../../assets/parking.jpg);
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+$light-blue: #2493c6;
+$dark-blue: #0e68a3;
+$light-brown: #e6af3d;
+$crimson: #e01021;
 
-  color: black;
+#parking {
+  // background-image: url(../../assets/parking.jpg);
+  min-height: 50vh;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+
+  background-color: $light-blue;
+
+  color: whitesmoke;
 
   padding-top: 4em;
 
