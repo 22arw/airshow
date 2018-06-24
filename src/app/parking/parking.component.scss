@@ -1,12 +1,27 @@
+$light-blue: #2493c6;
+$dark-blue: #0e68a3;
+$light-brown: #e6af3d;
+$crimson: #e01021;
+
 #parking {
   background-image: url(../../assets/parking.jpg);
-  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
   background-attachment: fixed;
 
-  color: black;
+  @media screen and (max-width: 992px) {
+    background-attachment: scroll;
+  }
+
+  min-height: 70vh;
+
+  color: whitesmoke;
 
   padding-top: 4em;
+
+  .title {
+    font-size: 5em;
+  }
 }
