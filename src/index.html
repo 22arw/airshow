@@ -3,10 +3,11 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
-    <!-- IE required polyfills, in this exact order -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <!-- Important site info -->
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="assets/airshow_logo.png">
 
     <!-- SEO and social meta tags -->
     <title>Frontiers In Flight | McConnell AFB Airshow 2018</title>
@@ -23,17 +24,18 @@
     <meta property="og:description" content="Join us Sept 8-9, 2018 for the McConnell AFB in Wichita KS Airshow! A free open house event, come see how Team McConnell contributes to the Air Capital of the World as the true Home of Air Refueling!" />
     <meta property="og:image" content="https://frontiersinflight.com/assets/social.jpg" />
 
-
-    <!-- Important site info -->
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="assets/airshow_logo.png">
-
     <!-- Bring in Fonts from Google -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!-- IE required polyfills, in this exact order -->
+    <!--[if IE ]>
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <![endif]-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118976123-1"></script>
