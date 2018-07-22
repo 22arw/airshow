@@ -4,9 +4,14 @@ $light-brown: #e6af3d;
 $crimson: #e01021;
 
 .navbar-text {
+
     a:hover {
         text-decoration: none;
     }
+}
+
+.fixed-top {
+    position: absolute;
 }
 
 .navbar {
