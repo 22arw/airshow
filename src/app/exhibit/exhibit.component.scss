@@ -4,8 +4,10 @@ $light-brown: #e6af3d;
 $crimson: #e01021;
 
 .header {
-    margin-top: -4em;
     position: relative;
+    @media screen and (max-width: 991px) {
+        margin-top: 3em;
+    }
     img {
         width: 100%;
         min-height: 200px;
