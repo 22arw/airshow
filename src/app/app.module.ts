@@ -19,6 +19,7 @@ import { SponsordisplayComponent } from './sponsordisplay/sponsordisplay.compone
 import { SponsorComponent } from './sponsor/sponsor.component';
 import { PremiumseatingComponent } from './premiumseating/premiumseating.component';
 import { ParkingComponent } from './parking/parking.component';
+import { HeritagevideoComponent } from './heritagevideo/heritagevideo.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ParkingComponent } from './parking/parking.component';
     SponsordisplayComponent,
     SponsorComponent,
     PremiumseatingComponent,
-    ParkingComponent
+    ParkingComponent,
+    HeritagevideoComponent
   ],
   imports: [
     BrowserModule,
