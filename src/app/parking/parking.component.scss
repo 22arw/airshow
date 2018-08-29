@@ -29,3 +29,10 @@ $crimson: #e01021;
 img {
   max-height: 100vh;
 }
+
+.bright-link {
+  color: white;
+  &:hover {
+    color: $light-brown;
+  }
+}
