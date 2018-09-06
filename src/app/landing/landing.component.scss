@@ -3,138 +3,143 @@ $dark-blue: #0e68a3;
 $light-brown: #e6af3d;
 $crimson: #e01021;
 
-
 .landing-page {
+  height: 100vh;
+  min-height: 600px;
 
-    height: 100vh;
-    min-height: 600px;
-
-    &:before {
-        content: "";
-        background: url(../../assets/thunderbirds.jpg);
-        filter: brightness(0.4);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-        min-height: 640px;
-      }
+  &:before {
+    content: '';
+    background: url(../../assets/thunderbirds.jpg);
+    filter: brightness(0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 640px;
+  }
 }
 
 .main {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 img {
-    margin-top: 4em;
-    max-width: 300px;
-    @media screen and (max-width: 960px) {
-        max-width: 175px;
-    }
+  margin-top: 4em;
+  max-width: 300px;
+  @media screen and (max-width: 960px) {
+    max-width: 175px;
+  }
 }
 
 .title {
-    // margin-top: 5%;
-    color: white;
-    .title-info {
-        border: white 5px solid;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
+  // margin-top: 5%;
+  color: white;
+  .title-info {
+    border: white 5px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 576px) {
-    .title {
-        margin-top: 15%;
-        margin-left: 5em;
-    }
-    img {
-        margin-top: 30%;
-    }
+  .title {
+    margin-top: 15%;
+    margin-left: 5em;
+  }
+  img {
+    margin-top: 30%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    img {
+  img {
     //    margin-top: 4em;
-        padding-top: 4px;
-        padding-bottom: 1em;
-    }
+    padding-top: 4px;
+    padding-bottom: 1em;
+  }
 }
 
 .email {
-    border: hidden;
-    border-bottom-style: solid;
-    border-bottom-color: $light-blue;
-    border-bottom-width: 1px;
-    background-color: transparent;
-    display: inline-block;
-    color: white;
+  border: hidden;
+  border-bottom-style: solid;
+  border-bottom-color: $light-blue;
+  border-bottom-width: 1px;
+  background-color: transparent;
+  display: inline-block;
+  color: white;
 
-    &:focus {
-        background-color: $light-blue;
-    }
+  &:focus {
+    background-color: $light-blue;
+  }
 }
 
 .btn {
-    background-color: $light-blue;
-    border: $dark-blue 1px solid;
-    &:hover {
-        background-color: $dark-blue;
-    }
+  background-color: $light-blue;
+  border: $dark-blue 1px solid;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
 
-
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: lightgray;
-    opacity: 1; /* Firefox */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: white;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: white;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 
 @media screen and (max-width: 576px) {
-
-    h1, h4, p {
-        text-align: center;
-    }
-    h1 {
-        font-size: 1.75em;
-    }
-    h4 {
-        font-size: 1.25em;
-    }
+  h1,
+  h4,
+  p {
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
 }
 //IE11 Mute-The-Background stuff
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
-    //     /* IE10+ specific styles go here */      
-        .main:before {
-            position: absolute;
-            display: block;
-            height:inherit;
-            width:100%;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 0;
-            content:"";
-            /*adjust brightness here */
-            background: hsla(0, 0%, 0%, .6); 
-        }
-        .row{
-            z-index: 1;
-        }
-     }
-    
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  //     /* IE10+ specific styles go here */
+  .main:before {
+    position: absolute;
+    display: block;
+    height: inherit;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    content: '';
+    /*adjust brightness here */
+    background: hsla(0, 0%, 0%, 0.6);
+  }
+  .row {
+    z-index: 1;
+  }
+}
+
+.alert {
+  background-color: white;
+  margin-top: 3em;
+}

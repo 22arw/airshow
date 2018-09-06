@@ -4,22 +4,21 @@ $light-brown: #e6af3d;
 $crimson: #e01021;
 
 .navbar-text {
-
-    a:hover {
-        text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .fixed-top {
-    position: absolute;
+  position: absolute;
 }
 
 .navbar {
-    background-color: transparent !important;
-    z-index: 5;
+  background-color: transparent !important;
+  z-index: 5;
 
-    @media screen and (max-width: 991px) {
-        background-color: $light-blue !important;
-        margin-bottom: 4rem;
-    }
+  @media screen and (max-width: 991px) {
+    background-color: $light-blue !important;
+    margin-bottom: 4rem;
+  }
 }
