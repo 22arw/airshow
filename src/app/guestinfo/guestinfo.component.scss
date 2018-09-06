@@ -3,25 +3,29 @@ $dark-blue: #0e68a3;
 $light-brown: #e6af3d;
 $crimson: #e01021;
 
+.fb-page {
+  margin-bottom: 1em;
+}
+
 .guestinfo {
-    background-color: white;
-    color: black;
-    padding-bottom: 2em;
+  background-color: white;
+  color: black;
+  padding-bottom: 2em;
 }
 
 .tab-content {
-    background-color: white;
-    border-radius: 0 0 1em 1em;
-    padding: 1em;
-    border: gray solid 1px;
+  background-color: white;
+  border-radius: 0 0 1em 1em;
+  padding: 1em;
+  border: gray solid 1px;
 }
 
 h3 {
-    text-align: center;
-    padding-bottom: 1em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .nav-item {
-    border: white solid 1px;
-    border-radius: 5px;
+  border: white solid 1px;
+  border-radius: 5px;
 }
