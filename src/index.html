@@ -1,65 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#0e68a3">
 
-    <!-- Important site info -->
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="assets/airshow_logo.png">
-    <link rel="canonical" href="https://frontiersinflight.com">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0e68a3">
 
-    <!-- SEO and social meta tags -->
-    <title>Frontiers In Flight | McConnell AFB Airshow 2018</title>
-    <meta name="description" content="Join us Sept 8-9, 2018 for the McConnell AFB in Wichita KS Airshow! A free open house event, come see how Team McConnell contributes to the Air Capital of the World as the true Home of Air Refueling!">
-    <meta name="rating" content="General">
+  <!-- Important site info -->
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/airshow_logo.png">
+  <link rel="canonical" href="https://frontiersinflight.com">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@22ARW" />
-    <meta name="twitter:creator" content="@22ARW" />
+  <!-- SEO and social meta tags -->
+  <title>Frontiers In Flight | McConnell AFB Airshow 2018</title>
+  <meta name="description" content="Join us Sept 8-9, 2018 for the McConnell AFB in Wichita KS Airshow! A free open house event, come see how Team McConnell contributes to the Air Capital of the World as the true Home of Air Refueling!">
+  <meta name="rating" content="General">
 
-    <meta property="og:url" content="https://frontiersinflight.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Frontiers In Flight | McConnell AFB Airshow 2018" />
-    <meta property="og:description" content="Join us Sept 8-9, 2018 for the McConnell AFB in Wichita KS Airshow! A free open house event, come see how Team McConnell contributes to the Air Capital of the World as the true Home of Air Refueling!" />
-    <meta property="og:image" content="https://frontiersinflight.com/assets/social.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@22ARW" />
+  <meta name="twitter:creator" content="@22ARW" />
 
-    <!-- Bring in Fonts from Google -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+  <meta property="og:url" content="https://frontiersinflight.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frontiers In Flight | McConnell AFB Airshow 2018" />
+  <meta property="og:description" content="Join us Sept 8-9, 2018 for the McConnell AFB in Wichita KS Airshow! A free open house event, come see how Team McConnell contributes to the Air Capital of the World as the true Home of Air Refueling!"
+  />
+  <meta property="og:image" content="https://frontiersinflight.com/assets/social.jpg" />
 
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <!-- Bring in Fonts from Google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
 
-    <!-- IE required polyfills, in this exact order -->
-    <!--[if IE ]>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+  <!-- IE required polyfills, in this exact order -->
+  <!--[if IE ]>
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
     <![endif]-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118976123-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118976123-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-118976123-1');
-    </script>
+    gtag('config', 'UA-118976123-1');
+  </script>
 
-  </head>
-  <body>
-    <app-root></app-root>
-  </body>
-  </html>
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=149644512219899&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>
 <script>
   // Closes nav bar on mobile when link is clicked.
-  $('.nav-link').on('click', function(){
+  $('.nav-link').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
-  
+
   //  Scrolls the page to the top
   $('.goToTop').click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
